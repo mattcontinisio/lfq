@@ -1,0 +1,4 @@
+time="2023-07-16T01:10:40Z" level=info msg="Info message" client_id=2
+time="2023-07-16T01:10:41Z" level=warning msg="Warning message" client_id=1
+time="2023-07-16T01:10:42Z" level=error msg="Error message" client_id=1
+time="2023-07-16T01:10:43Z" level=info msg="Info message" client_id=2
