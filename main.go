@@ -8,8 +8,9 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
-	"github.com/mattcontinisio/lfq/lfq"
 	"github.com/spf13/cobra"
+
+	"github.com/mattcontinisio/lfq/lfq"
 )
 
 // Flags
