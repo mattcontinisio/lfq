@@ -26,7 +26,7 @@ var rootCmd = &cobra.Command{
 	Short: "command-line logfmt processor",
 	Long: `lfq is a tool for processing logfmt inputs, filtering keys, and producing results as values, logfmt, or JSON on
 standard output.`,
-	Use:     "lfq [keys]",
+	Use:     "lfq [flags] <keys>",
 	Example: "lfq -o value time,level",
 	Run: func(cmd *cobra.Command, args []string) {
 		// Exit if data is not being piped to stdin

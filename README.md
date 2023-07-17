@@ -5,6 +5,30 @@
 lfq is a command-line [logfmt](https://brandur.org/logfmt) processor. It reads logfmt or JSON inputs, can optionally filter keys, and outputs values, logfmt, or JSON.
 
 ## Usage
+
+```sh
+$ lfq
+lfq is a tool for processing logfmt inputs, filtering keys, and producing results as values, logfmt, or JSON on
+standard output.
+
+Usage:
+  lfq [keys] [flags]
+
+Examples:
+lfq -o value time,level
+
+Flags:
+      --disable-quote        disable quoting of all values (for value and logfmt output)
+      --force-quote          force quoting of all values (for value and logfmt output)
+  -h, --help                 help for lfq
+  -i, --input string         input format (logfmt or json) (default "logfmt")
+      --no-color             disable colorized output
+  -o, --output string        output format (value, logfmt, or json) (default "logfmt")
+      --quote-empty-fields   wrap empty values in quotes (for value and logfmt output)
+```
+
+## Examples
+
 ```sh
 # Default - read logfmt and write logfmt
 $ cat examples/test.log | lfq
