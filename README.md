@@ -81,4 +81,5 @@ $ cat examples/test.log | lfq -o json | jq
 ## Other useful tools
 
 - [hutils](https://github.com/brandur/hutils) - A collection of command line utilities for working with logfmt
+- [humanlog](https://github.com/humanlogio/humanlog) - Read logs from stdin and prints them back to stdout, but prettier.
 - [jq](https://github.com/jqlang/jq) - Command-line JSON processor
