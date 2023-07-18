@@ -1,6 +1,7 @@
 # lfq
 
 [![](https://github.com/mattcontinisio/lfq/actions/workflows/test.yml/badge.svg)](https://github.com/mattcontinisio/lfq/actions)
+[![Go Reference](https://pkg.go.dev/badge/github.com/mattcontinisio/lfq.svg)](https://pkg.go.dev/github.com/mattcontinisio/lfq)
 [![Go Report Card](https://goreportcard.com/badge/github.com/mattcontinisio/lfq)](https://goreportcard.com/report/github.com/mattcontinisio/lfq)
 
 lfq is a command-line [logfmt](https://brandur.org/logfmt) processor. It reads logfmt or JSON inputs, can optionally filter keys, and outputs values, logfmt, or JSON.
