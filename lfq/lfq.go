@@ -3,7 +3,6 @@ package lfq
 
 import (
 	orderedmap "github.com/wk8/go-ordered-map/v2"
-	"golang.org/x/exp/slices"
 )
 
 // A parsed line
@@ -43,7 +42,15 @@ func (p *FilterProcessor) Process(l Line) Line {
 	for pair := l.m.Oldest(); pair != nil; {
 		k := pair.Key
 		pair = pair.Next()
-		if !slices.Contains(p.Keys, k) {
+		found := false
+		for _, filterKey := range p.Keys {
+			if filterKey == k {
+				found = true
+				break
+			}
+		}
+
+		if !found {
 			l.m.Delete(k)
 		}
 	}
